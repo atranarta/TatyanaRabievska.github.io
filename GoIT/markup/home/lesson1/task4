@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4</title>
+</head>
+<body>
+    <a href="./task1.html">Ссылка на задание №1</a>
+    <a href="./task2.html">Ссылка на задание №2</a>
+    <a href="./task3.html">Ссылка на задание №3</a>
+    <a href="http://goit.com.ua" target="_self">Ссылка на goit.com.ua</a>
+    <a href="http://ya.ru" target="_blank">Ссылка на ya.ru</a>
+</body>
+</html>
