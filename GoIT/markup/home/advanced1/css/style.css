@@ -339,7 +339,6 @@ header menu li.active a {
 }
 
 .slider-item:first-of-type {
-    background: url("../img/pict/header-slider-bg.jpg");
     height: 800px;
 }
 
