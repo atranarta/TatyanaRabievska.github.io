@@ -223,18 +223,6 @@ body {
     float: none !important;
 }
 
-h1,
-.h1,
-h1 a,
-.h1 a {
-    font-size: 46px;
-    line-height: 46px;
-    height: 46px;
-    color: #FFFFFF;
-    font-family: "Myriad Pro Regular", serif;
-    letter-spacing: 0.019em;
-}
-
 h2,
 .h2,
 h2 a,
@@ -349,7 +337,16 @@ header menu li.active a {
     right: 143px;
 }
 
-.slider-item:first-of-type h1 {
+.slider .slider-item .slider-title {
+    font-size: 46px;
+    line-height: 46px;
+    height: 46px;
+    color: #FFFFFF;
+    font-family: "Myriad Pro Regular", serif;
+    letter-spacing: 0.019em;
+}
+
+.slider-item:first-of-type .slider-title {
     margin-bottom: 18px;
 }
 
