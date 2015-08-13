@@ -300,30 +300,88 @@ header menu li.active a {
 .slider_next {
     position: absolute;
     display: block;
-    top: 374px;
+    top: 373px;
     width: 55px;
-    height: 54px;
-    background: url("../img/icons/header-slider-arrows.png");
+    height: 55px;
+    border-radius: 50%;
+    background: rgba(75, 202, 255, 0.2);
 }
 
 .slider_prev {
     left: 70px;
-    background-position: 0 0;
 }
+
+.slider_prev:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    top: 22px;
+    left: 27px;
+}
+
 
 .slider_next {
     right: 70px;
-    background-position: 55px 0;
+}
+
+.slider_next:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    top: 22px;
+    right: 27px;
 }
 
 .slider_next.active,
 .slider_next:hover {
-    background-position: 0 56px;
+    background: #4bcaff;
+}
+
+.slider_next.active:after,
+.slider_next:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-right: 1px solid #414042;
+    border-top: 1px solid #414042;
+    top: 22px;
+    right: 27px;
 }
 
 .slider_prev.active,
 .slider_prev:hover {
-    background-position: 55px 56px;
+    background: #4bcaff;
+}
+
+.slider_prev.active:after,
+.slider_prev:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-left: 1px solid #414042;
+    border-bottom: 1px solid #414042;
+    top: 22px;
+    left: 27px;
 }
 
 .slider-item:first-of-type {
