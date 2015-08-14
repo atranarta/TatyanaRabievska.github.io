@@ -313,7 +313,7 @@ header menu li.active a {
 /*/header*/
 
 /*slider*/
-.slider {
+.slider-wrap {
     position: relative;
     border-bottom: 4px solid #4bcaff;
 }
@@ -327,6 +327,7 @@ header menu li.active a {
     height: 55px;
     border-radius: 50%;
     background: rgba(75, 202, 255, 0.2);
+    z-index: 10;
 }
 
 .slider_prev {
