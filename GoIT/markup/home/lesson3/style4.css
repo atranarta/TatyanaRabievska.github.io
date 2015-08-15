@@ -1,0 +1,16 @@
+a[href^="http://"]:not([href*="google.com"]),
+a[href^="https://"]:not([href*="google.com"]){
+    color: #f70;
+}
+
+a[href*="google.com"] {
+    color: #666;
+}
+
+a[target="_blank"]:after {
+    content: " \21f1";
+    display: inline-block;
+    transform: scaleX(-1);
+    margin-left: 5px;
+}
+

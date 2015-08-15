@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+    color: #ffa500;
+}
+
+p:first-letter {
+    font-size: 30px;
+    color: #ff0000;
+}
+
+p em {
+    background: #008000;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.plants-list:first-of-type h2 {
+    color: #ffa500;
+}
+
+.plants-list li {
+    font-weight: bold;
+}
+
+.plants-list li li {
+    font-weight: normal;
+}
+
+.plants-list:first-of-type .fruits-list li {
+    color: #838787;
+}
+
+.plants-list:first-of-type .vegetables-list li,
+.plants-list:nth-of-type(2) .vegetables-list li {
+    color: #ff0000;
+}
+
+.plants-list:nth-of-type(2) h2 {
+    color: #0000ff;
+}
+
+.plants-list:nth-of-type(2) .fruits-list {
+    color: #008000;
+}
+
+.students-table thead td {
+    font-weight: bold;
+    text-align: center;
+}
+
+.students-table tbody td:first-of-type {
+    color: #ffa500;
+}
+
+.students-table tbody td:not(:first-of-type) {
+    background: #008000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
