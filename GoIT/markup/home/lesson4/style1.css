@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Impact Regular";
+    src: url(./Impact_Regular.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: #BA00FF;
+}
+
+menu {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0;
+}
+
+menu li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+menu li a {
+    display: block;
+    font-family: "Impact Regular", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+
+menu li:hover {
+    background: #eeeeee;
+}
+
+menu li:hover a {
+    color: #a0a0a0;
+}
