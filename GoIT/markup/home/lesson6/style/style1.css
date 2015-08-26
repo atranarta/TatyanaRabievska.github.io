@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Trebuchet MS Regular";
-    src: url(./Trebuchet-MS-Regular_.ttf);
+    src: url(fonts/Trebuchet-MS-Regular_.ttf);
 }
 
 
 @font-face {
     font-family: "Trebuchet MS Bold";
-    src: url(./Trebuchet-MS-Bold.ttf);
+    src: url(fonts/Trebuchet-MS-Bold.ttf);
 }
 
 h1 {
@@ -161,7 +161,7 @@ header .title {
     left: 33px;
     width: 15px;
     height: 15px;
-    background: url("./list-marker.png");
+    background: url("../img/list-marker.png");
 }
 
 .pricing-in li:nth-child(odd) {

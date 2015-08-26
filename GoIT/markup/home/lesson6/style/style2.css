@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Trebuchet MS Regular";
-    src: url(./Trebuchet-MS-Regular_.ttf);
+    src: url(fonts/Trebuchet-MS-Regular_.ttf);
 }
 
 @font-face {
     font-family: "Trebuchet MS Italic";
-    src: url(./Trebuchet-MS-Italic.ttf);
+    src: url(fonts/Trebuchet-MS-Italic.ttf);
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 .wrapper {
-    background: url("./bg.png") repeat;
+    background: url("../img/bg.png") repeat;
     padding: 50px 190px 35px;
 }
 
