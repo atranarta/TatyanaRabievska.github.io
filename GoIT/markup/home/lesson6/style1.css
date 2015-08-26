@@ -27,12 +27,13 @@ h1 {
 .pricing {
     display: inline-block;
     border-radius: 5px;
-    vertical-align: baseline;
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 .pricing:nth-of-type(2) {
     border: 4px solid #EE8129;
-    width: 288px;
+    width: 286px;
     box-shadow: 0 0 13px 0 rgba(8, 116, 178, 0.5);
 }
 
@@ -52,9 +53,16 @@ header {
     background: #1cb79a;
 }
 
+.pricing:nth-of-type(1) header,
+.pricing:nth-of-type(3) header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
 .pricing:nth-of-type(1),
 .pricing:nth-of-type(3) {
     border: 1px solid #e8eaec;
+    width: 289px;
 }
 
 header .title {
@@ -63,13 +71,16 @@ header .title {
     font-size: 24px;
     color: #FFFFFF;
     text-transform: uppercase;
-    padding: 23px 0;
+    padding: 23px 10px;
     margin: 0;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pricing:nth-of-type(1) header .title,
 .pricing:nth-of-type(3) header .title {
-    padding: 20px 0 13px;
+    padding: 20px 10px 13px;
 }
 
 .pricing-in {

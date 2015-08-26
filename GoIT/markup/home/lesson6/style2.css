@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Trebuchet MS Regular";
+    src: url(./Trebuchet-MS-Regular_.ttf);
+}
+
+@font-face {
+    font-family: "Trebuchet MS Italic";
+    src: url(./Trebuchet-MS-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background: url("./bg.png") repeat;
+    padding: 50px 190px 35px;
+}
+
+h1 {
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3170a8;
+    margin-bottom: 41px;
+}
+
+h1 span {
+    color: #ee8129;
+}
+
+.testimonials-wrap {
+    font-size: 0;
+}
+
+.testimonials-item {
+    display: inline-block;
+    font-size: 0;
+    margin-right: 43px;
+    margin-bottom: 43px;
+}
+
+.testimonials-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.testimonials-item img {
+    display: inline-block;
+    margin-right: 26px;
+    vertical-align: top;
+}
+
+.testimonials-item .text-box {
+    display: inline-block;
+    width: 364px;
+    background: #f7f7f7;
+    padding: 13px 16px 7px;
+    vertical-align: top;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.testimonials-item .text-box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #f7f7f7 transparent transparent;
+    top: 37px;
+    left: -16px;
+}
+
+.text-box .line-top {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #666666;
+    clear: both;
+    overflow: hidden;
+}
+
+.text-box .line-top a {
+    font-family: "Trebuchet MS Italic", sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #3070a8;
+    text-decoration: none;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-box .line-top .username {
+    float: left;
+    position: relative;
+    padding-left: 8px;
+    max-width: 250px;
+}
+
+.text-box .line-top .username:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 1px;
+    top: 8px;
+    left: 0;
+    background: #3070a8;
+}
+
+.text-box .line-top .status {
+    float: right;
+    margin-right: 6px;
+    max-width: 162px;
+}
+
+.text-box .text {
+    padding: 7px 0;
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5em;
+    letter-spacing: 0.025em;
+}
