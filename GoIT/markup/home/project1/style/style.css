@@ -209,6 +209,8 @@ i, .i {
     margin: 0 auto;
 }
 
+/*header*/
+
 header {
     background: #ffffff;
     padding: 23px 248px 0 189px;
@@ -250,6 +252,10 @@ header menu li.active a {
 header menu li.active a {
     border-bottom: 4px solid #3070a8;
 }
+
+/*/header*/
+
+/*banner*/
 
 .banner {
     position: relative;
@@ -312,7 +318,9 @@ header menu li.active a {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/*/banner*/
 
+/*pricing*/
 
 .pricing {
     padding: 70px 0 75px;
@@ -536,6 +544,10 @@ header {
     box-shadow: none;
 }
 
+/*/pricing*/
+
+/*testimonials*/
+
 .testimonials {
     background: url("../img/bg.png") repeat;
     padding: 50px 190px 35px;
@@ -648,4 +660,6 @@ header {
     line-height: 1.5em;
     letter-spacing: 0.025em;
 }
+
+/*/testimonials*/
 
