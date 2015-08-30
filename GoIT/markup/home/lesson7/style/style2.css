@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Futura Bt Book";
+    src: url(fonts/futura-bt_book.ttf);
+}
+
+@font-face {
+    font-family: "Futura Bt Bold";
+    src: url(fonts/futura-bt_bold.ttf);
+}
+
+@font-face {
+    font-family: "Calibri Italic";
+    src: url(fonts/Calibri%20Italic.ttf);
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background: #ffffff;
+    padding: 23px 248px 0 189px;
+    clear: both;
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+}
+
+header menu {
+    float: right;
+}
+
+header menu ul {
+    font-size: 0;
+}
+
+header menu li {
+    display: inline-block;
+}
+
+header menu li a {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #989898;
+    text-decoration: none;
+    padding: 15px 17px 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header menu li:hover a,
+header menu li.active a {
+    color: #3070a8;
+}
+
+header menu li.active a {
+    border-bottom: 4px solid #3070a8;
+}
+
+.banner {
+    position: relative;
+    height: 584px;
+}
+
+.banner-in {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    padding: 144px 264px 0;
+    overflow: hidden;
+}
+
+.banner-title {
+    font-family: "Futura Bt Book", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.banner-title span {
+    display: block;
+    font-family: "Futura Bt Bold", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+.banner-text {
+    font-family: "Calibri Italic", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    padding: 0 155px;
+    margin-top: 21px;
+}
+
+.banner-button {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 35px auto 0;
+    padding: 17px 60px;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
