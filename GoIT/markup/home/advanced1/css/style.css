@@ -245,6 +245,7 @@ body {
 .wrapper {
     width: 1480px;
     margin: 0 auto;
+    position: relative;
 }
 
 .wrapper:after {
@@ -265,9 +266,8 @@ body {
 
 /*header*/
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
     width: 1480px;
     height: 100px;
     background: rgba(0, 0, 0, 0.3);
@@ -308,9 +308,6 @@ header menu li a {
 header menu li:hover a,
 header menu li.active a {
     color: #4bcaff;
-}
-
-header menu li.active a {
     border-top: 2px solid #4bcaff;
 }
 
@@ -334,6 +331,7 @@ header menu li.active a {
     border-radius: 50%;
     background: rgba(75, 202, 255, 0.2);
     z-index: 10;
+    transition: 0.5s;
 }
 
 .slider_prev {
@@ -468,14 +466,12 @@ header menu li.active a {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
-}
-
-.main-slider-item:first-of-type .btn-box .download {
     background: transparent;
     border: 2px solid #FFFFFF;
+    transition: 0.5s;
 }
 
-.main-slider-item:first-of-type .btn-box .learn-more {
+.main-slider-item:first-of-type .btn-box button:hover {
     background: #4bcaff;
     box-shadow: 0 4px 0 0 rgba(39, 118, 151, 0.9);
     border: none;
@@ -604,6 +600,7 @@ header menu li.active a {
     border:4px solid rgb(239, 239, 239);
     background: #4BCAFF;
     margin: 0 auto 25px;
+    transition: 1s;
 }
 
 .feature-item:hover .img {
@@ -663,6 +660,7 @@ header menu li.active a {
 
 .feature-item:hover .text-box .title {
     color: #4bcaff;
+    transition: 0.5s;
 }
 
 .feature-item .text-box .text {
@@ -705,6 +703,7 @@ header menu li.active a {
     border-right: 5px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: 1s;
 }
 
 .gallery-item-popup {
@@ -762,6 +761,8 @@ header menu li.active a {
 
 .prices {
     padding: 62px 225px 46px;
+    height: 706px;
+    box-sizing: border-box;
 }
 
 .prices-item-wrap {
@@ -783,6 +784,7 @@ header menu li.active a {
     vertical-align: top;
     padding: 23px 0;
     margin-top: 39px;
+    transition: 1s;
 }
 
 .prices-item:last-of-type {
@@ -848,6 +850,10 @@ header menu li.active a {
     background: #91c46b;
 }
 
+.prices-item:first-of-type .button:hover {
+    background: #a9e481;
+}
+
 .prices-item:nth-child(2) .price {
     background: #4bcaff;
 }
@@ -856,12 +862,20 @@ header menu li.active a {
     background: #4bcaff;
 }
 
+.prices-item:nth-child(2) .button:hover {
+    background: #73f0ff;
+}
+
 .prices-item:nth-child(3) .price {
     background: #fd7c00;
 }
 
 .prices-item:nth-child(3) .button {
     background: #fd7c00;
+}
+
+.prices-item:nth-child(3) .button:hover {
+    background: #fda633;
 }
 
 .prices-item:hover {
@@ -982,7 +996,8 @@ header menu li.active a {
 
 section.download {
     background: #414042;
-    padding: 23px 449px 36px 509px;
+    padding: 23px 0 36px;
+    text-align: center;
 }
 
 .download-title {
@@ -1008,6 +1023,7 @@ section.download {
     width: 196px;
     line-height: 60px;
     height: 60px;
+    transition: 0.5s;
 }
 
 .download button:hover {
@@ -1032,7 +1048,8 @@ section.download {
     position: absolute;
     width: 325px;
     top: 110px;
-    left: 570px;
+    left: 50%;
+    margin-left: -163px;
     background-color: rgba(75, 202, 255, 0.8);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
@@ -1068,7 +1085,6 @@ section.download {
     box-sizing: border-box;
     padding: 3px 7px;
     text-align: center;
-    outline: none;
 }
 
 .contact-form input {
@@ -1106,6 +1122,7 @@ section.download {
     margin: 20px auto 0;
     height: 49px;
     width: 190px;
+    transition: 0.5s;
 }
 
 .contact-form input[type='submit']:hover {
