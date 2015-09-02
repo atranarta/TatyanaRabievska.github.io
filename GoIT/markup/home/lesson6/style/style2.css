@@ -15,7 +15,7 @@
 
 .wrapper {
     background: url("../img/bg.png") repeat;
-    padding: 50px 190px 35px;
+    padding: 50px 0 35px;
 }
 
 h1 {
@@ -33,6 +33,7 @@ h1 span {
 
 .testimonials-wrap {
     font-size: 0;
+    text-align: center;
 }
 
 .testimonials-item {
