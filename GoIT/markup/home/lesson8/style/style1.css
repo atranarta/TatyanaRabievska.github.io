@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    background: #FFCE4E;
+    padding: 5px 3px;
+    position: relative;
+    width: calc(100% - 20px);
+    height: 44px;
+}
+
+.search-wrap {
+    clear: both;
+    overflow: hidden;
+}
+
+.search-wrap input[type="submit"] {
+    float: right;
+    width: 68px;
+    height: 26px;
+    border-radius: 0;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: #ffffff linear-gradient(to bottom, #ffffff 0%, #d6d6d6 100%);
+    border: 1px solid #bbbbbb;
+    margin-right: 9px;
+}
+
+.arrow input[type="text"] {
+    float: left;
+    width: calc(100% - 90px);
+    height: 22px;
+    line-height: 22px;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.checkbox-box {
+    margin-top: 2px;
+}
+
+.checkbox-box span {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-transform: lowercase;
+}
+
+.arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 0 28px 14px;
+    border-color: transparent transparent transparent #FFCE4E;
+    top: 0;
+    right: -14px;
+}
