@@ -320,14 +320,117 @@ header menu li.active a {
 
 /*/banner*/
 
+/*services*/
+
+.services {
+    padding: 62px 0;
+}
+
+.services-wrap {
+    width: 1023px;
+    margin: 70px auto 0;
+    font-size: 0;
+}
+
+.services-item {
+    display: inline-block;
+    width: 310px;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.services-item img {
+    margin-bottom: 23px;
+}
+
+.services-item .title {
+    font-family: "Futura Bt Book", Arial, sans-serif;
+    font-size: 30px;
+    color: #3070a8;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.services-item .description {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.8em;
+}
+
+.services-item:last-of-type {
+    margin-right: 0;
+}
+
+/*/services*/
+
+/*middle*/
+
+.middle {
+    background: url("../img/middle-bg.png");
+    width: 1400px;
+    height: 577px;
+    box-sizing: border-box;
+    padding: 73px 530px 73px 190px;
+}
+
+.middle-title {
+    font-family: "Futura Bt Book", Arial, sans-serif;
+    font-size: 26px;
+    color: #ee8129;
+    height: 100px;
+    text-transform: uppercase;
+    line-height: 1.85em;
+}
+
+.middle-title-description {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: italic;
+    font-size: 19px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+}
+
+.middle li {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #9d9d9d;
+    line-height: 2.2em;
+    padding-left: 39px;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: default;
+}
+
+.middle li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 11px;
+    left: 17px;
+    background: url("../img/list-ellipse.png") 0 0;
+}
+
+.middle li:hover {
+    color: #3070a8;
+}
+
+.middle li:hover:before {
+    background-position: 8px 0;
+}
+
+/*/middle*/
+
 /*pricing*/
 
 .pricing {
     padding: 70px 0 75px;
 }
 
-.pricing-title {
-    font-family: "Trebuchet MS Bold", sans-serif;
+.section-title {
+    font-family: "Trebuchet MS Bold", Arial, sans-serif;
     font-weight: bold;
     font-size: 30px;
     color: #41525c;
@@ -341,6 +444,7 @@ header menu li.active a {
     width: 876px;
     font-size: 0;
 }
+
 .pricing-item {
     display: inline-block;
     border-radius: 5px;
@@ -392,7 +496,7 @@ header {
 }
 
 .pricing-header .title {
-    font-family: "Trebuchet MS Bold", sans-serif;
+    font-family: "Trebuchet MS Bold", Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
@@ -420,7 +524,7 @@ header {
 }
 
 .pricing-in .title {
-    font-family: "Trebuchet MS Regular", sans-serif;
+    font-family: "Trebuchet MS Regular", Arial, sans-serif;
     font-size: 24px;
     color: #3f4042;
     text-align: center;
@@ -430,7 +534,7 @@ header {
 
 .pricing-in .price {
     position: relative;
-    font-family: "Trebuchet MS Bold", sans-serif;
+    font-family: "Trebuchet MS Bold", Arial, sans-serif;
     font-weight: bold;
     font-size: 72px;
     color: #35495a;
@@ -445,7 +549,7 @@ header {
 
 .pricing-in .price span {
     position: absolute;
-    font-family: "Trebuchet MS Regular", sans-serif;
+    font-family: "Trebuchet MS Regular", Arial, sans-serif;
 }
 
 .pricing-in .price span:first-of-type {
@@ -473,7 +577,7 @@ header {
 
 .pricing-in li {
     position: relative;
-    font-family: "Trebuchet MS Regular", sans-serif;
+    font-family: "Trebuchet MS Regular", Arial, sans-serif;
     font-size: 15px;
     color: #888c94;
     padding: 8px 20px 8px 63px;
@@ -504,7 +608,7 @@ header {
     padding: 11px;
     box-sizing: border-box;
     margin: 0 4px;
-    font-family: "Trebuchet MS Bold", sans-serif;
+    font-family: "Trebuchet MS Bold", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #FFFFFF;
@@ -554,7 +658,7 @@ header {
 }
 
 .testimonials-title {
-    font-family: "Trebuchet MS Regular", sans-serif;
+    font-family: "Trebuchet MS Regular", Arial, sans-serif;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
@@ -618,7 +722,7 @@ header {
 }
 
 .text-box .line-top a {
-    font-family: "Trebuchet MS Italic", sans-serif;
+    font-family: "Trebuchet MS Italic", Arial, sans-serif;
     font-style: italic;
     font-size: 13px;
     color: #3070a8;
@@ -654,7 +758,7 @@ header {
 
 .text-box .text {
     padding: 7px 0;
-    font-family: "Trebuchet MS Regular", sans-serif;
+    font-family: "Trebuchet MS Regular", Arial, sans-serif;
     font-size: 13px;
     color: #666666;
     line-height: 1.5em;
@@ -662,4 +766,115 @@ header {
 }
 
 /*/testimonials*/
+
+/*contact*/
+
+.contact-box {
+    float: left;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #666666;
+    width: calc(100% - 704px);
+    box-sizing: border-box;
+    padding: 38px 193px 10px;
+    height: 345px;
+}
+
+.contact-box p {
+    padding-left: 57px;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.contact-box p:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact-box .address {
+    line-height: 2.2em;
+}
+
+.contact-box p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("../img/contact.png");
+}
+
+.contact-box .address:before {
+    width: 23px;
+    height: 31px;
+    top: 3px;
+    left: 1px;
+    background-position: 0 0;
+}
+
+.contact-box .phone:before {
+    width: 19px;
+    height: 26px;
+    top: -1px;
+    left: -2px;
+    background-position: -25px 0;
+}
+
+.contact-box .email:before {
+    width: 23px;
+    height: 16px;
+    top: 4px;
+    left: -4px;
+    background-position: -47px 0;
+}
+
+.contact-box .social-box {
+    margin-top: 35px;
+    font-size: 0;
+}
+
+.contact-box .social-box a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 20px;
+    background: url("../img/contact.png");
+}
+
+.contact-box .social-box a:last-of-type {
+    margin-right: 0;
+}
+
+.contact-box .social-box .fb {
+    background-position: 0 47px;
+}
+
+.contact-box .social-box .tw {
+    background-position: -46px 47px;
+}
+
+.contact-box .social-box .in {
+    background-position: -92px 47px;
+}
+
+.map {
+    float: right;
+}
+/*/contact*/
+
+/*footer*/
+
+footer {
+    font-family: "Open Sans", Arial, sans-serif;
+    background: #3070a8;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 2.2em;
+    height: 104px;
+    box-sizing: border-box;
+}
+
+footer span {
+    color: #000;
+}
+/*/footer*/
 
