@@ -205,7 +205,8 @@ i, .i {
 
 
 .wrapper {
-    width: 1400px;
+    max-width: 1400px;
+    min-width: 1023px;
     margin: 0 auto;
 }
 
@@ -259,18 +260,11 @@ header menu li.active a {
 
 .banner {
     position: relative;
-    height: 584px;
-}
-
-.banner-in {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background: url("../img/banner.jpg") no-repeat center;
     color: #FFFFFF;
-    padding: 144px 264px 0;
-    overflow: hidden;
+    padding: 10%;
+    height: 585px;
+    box-sizing: border-box;
 }
 
 .banner-title {
@@ -367,11 +361,11 @@ header menu li.active a {
 /*middle*/
 
 .middle {
-    background: url("../img/middle-bg.png");
-    width: 1400px;
+    background: url("../img/middle-bg.png") center;
     height: 577px;
+    width: 100%;
     box-sizing: border-box;
-    padding: 73px 530px 73px 190px;
+    padding: 5% 35% 0 15%;
 }
 
 .middle-title {
@@ -381,6 +375,8 @@ header menu li.active a {
     height: 100px;
     text-transform: uppercase;
     line-height: 1.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .middle-title-description {
@@ -654,7 +650,8 @@ header {
 
 .testimonials {
     background: url("../img/bg.png") repeat;
-    padding: 50px 190px 35px;
+    padding: 47px 0 35px 42px;
+    text-align: center;
 }
 
 .testimonials-title {
@@ -679,10 +676,6 @@ header {
     font-size: 0;
     margin-right: 41px;
     margin-bottom: 41px;
-}
-
-.testimonials-item:nth-child(even) {
-    margin-right: 0;
 }
 
 .testimonials-item img {
@@ -774,10 +767,9 @@ header {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     color: #666666;
-    width: calc(100% - 704px);
+    width: 50%;
     box-sizing: border-box;
-    padding: 38px 193px 10px;
-    height: 345px;
+    padding: 38px 0 10px 14%;
 }
 
 .contact-box p {
@@ -856,6 +848,7 @@ header {
 
 .map {
     float: right;
+    width: 50%;
 }
 /*/contact*/
 
@@ -877,4 +870,15 @@ footer span {
     color: #000;
 }
 /*/footer*/
+
+@media screen and (max-width: 1720px) {
+
+    header .logo,
+    header menu {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    
+}
 
