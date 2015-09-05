@@ -871,7 +871,7 @@ footer span {
 }
 /*/footer*/
 
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1275px) {
 
     header .logo,
     header menu {
@@ -879,6 +879,6 @@ footer span {
         float: none;
         text-align: center;
     }
-    
+
 }
 
