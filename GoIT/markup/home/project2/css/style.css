@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/*base*/
+/*base_non-change*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    resize: none;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+.clr:after {
+    content: '';
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    float: none !important;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+.jq-selectbox.opened,
+textarea:focus {
+    outline: none;
+}
+
+b, .b {
+    font-weight: bold;
+}
+
+i, .i {
+    font-style: italic;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slider-list {
+    width: 20000em;
+    position: relative;
+}
+
+/*/base_non-change*/
+/*base_custom*/
+
+html {
+    background: #FFF;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+h1,
+.h1,
+h1 a,
+.h1 a {
+    font-size: 41px;
+    color: #2d3950;
+    margin-bottom: 12px;
+    font-family: "Lato Regular", Arial, sans-serif;
+    text-align: center;
+}
+
+/*/base_custom*/
+/*/base*/
+
+/*progect-any-block-(a-z)*/
+
+section.photo {
+    padding: 52px;
+    background: #f6f9f9;
+}
+
+h1 span {
+    display: block;
+    color: #909090;
+    font-size: 15px;
+    margin-top: 16px;
+}
+
+.photo-box {
+    max-width: 1170px;
+    min-width: 360px;
+    font-size: 0;
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.photo-item {
+    display: inline-block;
+    margin: 0 15px 30px 15px;
+    width: 360px;
+    height: 260px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.photo-item .veil {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+    background-color: rgba(37, 166, 247, 0.902);
+}
+
+.photo-item .veil .icon-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    margin-top: -21px;
+    margin-left: -47px;
+}
+
+.photo-item .veil .icon-box a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    background: transparent;
+    margin-right: 10px;
+    background: url("../img/sprite.png");
+}
+
+.photo-item .veil .icon-box a:last-of-type {
+    margin-right: 0;
+}
+
+.photo-item .veil .icon-box a:hover {
+    background-color: #25a6f7;
+}
+
+.photo-item .veil .icon-box .zoom {
+    background-position: -3px -6px;
+}
+
+.photo-item .veil .icon-box .link {
+    background-position: -3px -68px;
+}
+
+.photo-item:hover .veil {
+    display: block;
+}
+
+
+
+/*/progect-any-block-(a-z)*/
+
