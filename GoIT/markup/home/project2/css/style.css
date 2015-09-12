@@ -295,6 +295,49 @@ h1 span {
     display: block;
 }
 
+.popup-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+
+.popup {
+    position: relative;
+    width: 90%;
+    min-width: 300px;
+    max-width: 1140px;
+    margin: 209px auto 0;
+}
+
+.popup img {
+    border-radius: 5px;
+    border: 3px solid #999999;
+    width: 100%;
+}
+
+.item_popup_close {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #25A6F7 url("../img/sprite.png") -6px -131px;
+    top: -20px;
+    right: 14px;
+}
+
+.item_popup_close:hover {
+    background-color: #F74C26;
+}
+
+
+.popup-show .popup-wrap {
+    display: block;
+}
 
 
 /*/progect-any-block-(a-z)*/
