@@ -402,28 +402,25 @@ header menu li:hover .submenu {
     display: block;
 }
 
-header .submenu:before {
+header .submenu:before,
+header .submenu:after {
     content: '';
     position: absolute;
     top: -1px;
-    left: 20px;
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
+}
+
+header .submenu:before {
+    left: 20px;
     border-width: 7px 7px 0 7px;
     border-color: #e0e0e0 transparent transparent transparent;
 }
 
 header .submenu:after {
-    content: '';
-    position: absolute;
-    top: -1px;
     left: 21px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
     border-width: 6px 6px 0 6px;
     border-color: #ffffff transparent transparent transparent;
 }
@@ -794,7 +791,7 @@ header .submenu:after {
     z-index: 2;
     display: none;
     overflow: hidden;
-    width: 928px;
+    width: 926px;
     font-size: 12px;
     padding: 29px 21px;
     position: absolute;
@@ -999,16 +996,16 @@ footer:after {
 
 .shadow:before,
 .shadow:after {
-        content:"";
-        position:absolute;
-        z-index:-2;
-        bottom:15px;
-        left:10px;
-        width:50%;
-        height:20%;
-        max-width:300px;
+    content:"";
+    position:absolute;
+    z-index:-2;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
     -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
             box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
     -webkit-transform:rotate(-3deg);
        -moz-transform:rotate(-3deg);
