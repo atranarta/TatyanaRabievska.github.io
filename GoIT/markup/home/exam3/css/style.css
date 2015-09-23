@@ -160,14 +160,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-.jq-selectbox.opened,
-textarea:focus {
-    border: 1px solid #f2532f;
-    outline: none;
-}
-
 b, .b {
     font-weight: bold;
 }
@@ -200,12 +192,15 @@ body {
     text-size-adjust: none;
 }
 
-.wrapper {
+.wrapper-box {
     width: 974px;
+    margin: 60px auto 80px auto;
+}
+
+.wrapper {
     padding: 20px 20px 20px 30px;
     box-sizing: border-box;
     background: #ffffff;
-    margin: 60px auto 80px auto;
     border: 1px solid #eaeaea;
     border-radius: 3px;
     position: relative;
@@ -223,6 +218,7 @@ body {
 }
 
 .wrapper:before {
+    content: '';
     position: absolute;
     border-radius: 3px;
     background-color: #ffffff;
@@ -230,7 +226,6 @@ body {
     height: 3px;
     width: 972px;
     z-index: -1;
-    content: '';
     bottom: -5px;
     left: 0;
 }
@@ -427,6 +422,203 @@ header .submenu:after {
 
 /*/header*/
 
+
+/*/contact*/
+
+.contact-title {
+    font-family: 'Oxygen', "Myriad Pro", Arial, sans-serif;
+    font-size: 20px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 13px 0;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    border-left: 0;
+    margin-top: 29px;
+}
+
+.contact .main {
+    width: 607px;
+    float: left;
+}
+
+.contact .form-wrap {
+    padding: 16px 22px 53px 0;
+    border-right: 1px solid #e5e5e5;
+}
+
+.contact .form-title {
+    font-family: 'Oxygen', "Myriad Pro", Arial, sans-serif;
+    font-size: 18px;
+    color: #222222;
+    padding-bottom: 15px;
+}
+
+.contact form {
+    font-size: 0;
+    padding-top: 20px;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+}
+
+.contact form:before,
+.contact form:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.contact form:before {
+    left: 39px;
+    border-width: 7px 7px 0 7px;
+    border-color: #e0e0e0 transparent transparent transparent;
+}
+
+.contact form:after {
+    left: 40px;
+    border-width: 6px 6px 0 6px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.contact form .line {
+    margin-bottom: 15px;
+}
+
+.contact form .line:not(.textarea-line) {
+    height: 25px;
+    line-height: 25px;
+}
+
+.contact form label {
+    display: inline-block;
+    width: 109px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #444444;
+    height: 23px;
+    line-height: 28px;
+}
+
+.contact form input[type='text'],
+.contact form input[type='email'],
+.contact form textarea {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+.contact form textarea {
+    width: 475px;
+    min-height: 177px;
+    padding: 10px;
+}
+
+.contact form textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    color:#999999;
+    line-height: 1.5em;
+}
+
+.contact form textarea::-moz-placeholder {
+    font-size: 12px;
+    color:#999999;
+    line-height: 1.5em;
+}
+
+.contact form textarea:-moz-placeholder {
+    font-size: 12px;
+    color:#999999;
+    line-height: 1.5em;
+}
+
+.contact form textarea:-ms-input-placeholder {
+    font-size: 12px;
+    color:#999999;
+    line-height: 1.5em;
+}
+
+.contact form input[type='text'],
+.contact form input[type='email'] {
+    width: 155px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.contact form input[type='text']:valid,
+.contact form input[type='email']:valid {
+    border-color: #cae28b;
+}
+
+.contact form input[type='text']:invalid,
+.contact form input[type='email']:invalid {
+    border-color: #ecb0b0;
+}
+
+.contact form input[type='submit'] {
+    border: none;
+    margin-left: 109px;
+    font-size: 15px;
+    padding: 5px 18px;
+}
+
+
+/*sidebar*/
+
+.contact .sidebar {
+    float: right;
+    width: 310px;
+    padding: 21px 14px;
+    box-sizing: border-box;
+}
+
+.sidebar-content-box {
+    width: 100%;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    padding: 7px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.sidebar-content-box .title {
+    font-weight: bold;
+    color: #666666;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar-content-box .text {
+    color: #444444;
+    padding: 9px 2px;
+    line-height: 1.7em;
+}
+
+
+/*/sidebar*/
+/*/contact*/
+
+/*hr-wrap*/
+
+.hr-wrap {
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    background: #fafafa;
+    padding: 20px;
+}
+
+.hr-wrap hr {
+    background: #dfdfdf;
+}
+
+/*/hr-wrap*/
 
 
 /*footer*/
