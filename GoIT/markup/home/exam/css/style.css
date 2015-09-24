@@ -189,15 +189,12 @@ i, .i {
 /*/base_non-change*/
 /*base_custom*/
 
-html {
-    background: #fafafa;
-}
-
 body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
+    background: url("../img/body-bg.jpg") repeat;
 }
 
 .wrapper {
@@ -374,10 +371,10 @@ header menu .submenu li:after {
     content: '';
     display: block;
     position: absolute;
-    width: 153px;
+    width: 143px;
     height: 7px;
     background: #e5e5e5;
-    left: 5px;
+    left: 10px;
     bottom: -6px;
 }
 
@@ -794,47 +791,50 @@ input {
     top: 50%;
     left: 50%;
     height: 63px;
-    width: 138px;
+    width: 150px;
     text-align: center;
     font-size: 0;
     margin-top: -31px;
-    margin-left: -69px;
+    margin-left: -75px;
 }
 
 .img-box .overlay .links a {
     display: inline-block;
     vertical-align: middle;
-    background-image: url("../img/sprite.png");
-    margin-right: 3px;
+    margin-right: 15px;
     position: relative;
     transform: scale(1, 1);
     transition: transform .2s;
+    background: rgba(0, 0, 0, .3);
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    top: 17px;
 }
 
 .img-box .overlay .links a:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.8, 1.8);
 }
 
 .img-box .overlay .links a:last-of-type {
     margin-right: 0;
 }
 
-.img-box .overlay .download {
-    width: 35px;
-    height: 35px;
-    background-position: 0 -129px;
-}
-
-.img-box .overlay .show {
-    width: 62px;
-    height: 62px;
-    background-position: -1px -168px;
-}
-
-.img-box .overlay .screen {
-    width: 35px;
-    height: 35px;
-    background-position: 0 -236px;
+.img-box .overlay .links span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: -o-linear-gradient(bottom, #DADADA 0%, #FEFEFE 100%);
+    background-image: -moz-linear-gradient(bottom, #DADADA 0%, #FEFEFE 100%);
+    background-image: -webkit-linear-gradient(bottom, #DADADA 0%, #FEFEFE 100%);
+    background-image: -ms-linear-gradient(bottom, #DADADA 0%, #FEFEFE 100%);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
 
 .articles .img-description-box {
@@ -851,6 +851,32 @@ input {
     font-family: Arial, sans-serif;
     color: #999999;
     font-size: 11px;
+    position: relative;
+}
+
+.articles .img-description-box span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/sprite.png");
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+.articles .img-description-box .download span:before {
+    background-position: 2px -359px;}
+
+.articles .img-description-box .show span:before {
+    background-position: 1px -397px;
+    background-size: 50px;
+}
+
+.articles .img-description-box .screen span:before {
+    background-position: 0 -404px;
 }
 
 .articles .img-description-box:after {
