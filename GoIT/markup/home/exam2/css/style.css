@@ -331,7 +331,8 @@ header menu .btn:hover {
 }
 
 header .submenu {
-    display: none;
+    display: block;
+    visibility: hidden;
     position: absolute;
     background: #ffffff;
     width: 165px;
@@ -342,6 +343,9 @@ header .submenu {
     top: 35px;
     left: -3px;
     z-index: 999;
+    opacity: 0;
+    margin-top: -10px;
+    transition: margin .2s, opacity .2s;
 }
 
 header menu .submenu li {
@@ -394,7 +398,9 @@ header .submenu li:hover span {
 }
 
 header menu li:hover .submenu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
 }
 
 header .submenu:before,
@@ -452,36 +458,57 @@ header .submenu:after {
     font-size: 18px;
     color: #222222;
     padding-bottom: 15px;
-}
-
-.contact form {
-    font-size: 0;
-    padding-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
     position: relative;
-    border-top: 1px solid #e5e5e5;
 }
 
-.contact form:before,
-.contact form:after {
+.contact .form-title:before,
+.contact .form-title:after {
     content: '';
     position: absolute;
-    top: -1px;
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
 }
 
-.contact form:before {
+.contact .form-title:before {
     left: 39px;
     border-width: 7px 7px 0 7px;
     border-color: #e0e0e0 transparent transparent transparent;
+    bottom: -7px;
 }
 
-.contact form:after {
+.contact .form-title:after {
     left: 40px;
     border-width: 6px 6px 0 6px;
     border-color: #ffffff transparent transparent transparent;
+    bottom: -6px;
+}
+
+.contact form {
+    font-size: 0;
+    padding-top: 20px;
+    position: relative;
+}
+
+.contact form:before,
+.contact form:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+
+.contact form:before {
+    bottom: 50%;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+       -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    -moz-border-radius: 100px / 10px;
+         border-radius: 100px / 10px;
 }
 
 .contact form .line {
@@ -503,10 +530,15 @@ header .submenu:after {
     line-height: 28px;
 }
 
-.contact form input[type='text'],
-.contact form input[type='email'],
-.contact form textarea {
+.input-wrap {
     display: inline-block;
+    width: 455px;
+    position: relative;
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact textarea {
     border: 1px solid #dddddd;
     border-radius: 3px;
     padding: 0 9px;
@@ -514,6 +546,7 @@ header .submenu:after {
 }
 
 .contact form textarea {
+    display: inline-block;
     width: 475px;
     min-height: 177px;
     padding: 10px;
@@ -550,14 +583,54 @@ header .submenu:after {
     line-height: 25px;
 }
 
-.contact form input[type='text']:valid,
-.contact form input[type='email']:valid {
+.input-wrap.valid input {
     border-color: #cae28b;
 }
 
-.contact form input[type='text']:invalid,
-.contact form input[type='email']:invalid {
+.input-wrap.valid:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 163px;
+    width: 14px;
+    height: 14px;
+    background: #c4dd83 url("../img/sprite.png") 4px -336px;
+    border-radius: 50%;
+}
+
+.input-wrap.invalid input {
     border-color: #ecb0b0;
+}
+
+.input-wrap.invalid:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 163px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 4px 3px 0;
+    border-color: transparent #ecb0b0 transparent transparent;
+}
+
+.input-wrap.invalid:after {
+    content: 'something wrong with your email';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 167px;
+    height: 14px;
+    width: 165px;
+    background: #ecb0b0;
+    border-radius: 2px;
+    color: #ac4040;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 5px 5px 5px 10px;
 }
 
 .contact form input[type='submit'] {
@@ -602,6 +675,7 @@ header .submenu:after {
 
 
 /*/sidebar*/
+
 /*/contact*/
 
 /*hr-wrap*/
@@ -712,6 +786,10 @@ footer:after {
     display: block;
     font-size: 11px;
     color: #aaaaaa;
+}
+
+.footer-list-wrap li:hover span {
+    color: #828282;
 }
 
 /*/footer*/
