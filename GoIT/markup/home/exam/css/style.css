@@ -837,6 +837,19 @@ input {
     opacity: 1;
 }
 
+.articles .overlay span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/sprite.png");
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
 .articles .img-description-box {
     font-family: 'Oxygen', "Myriad Pro", Arial, sans-serif;
     font-size: 14px;
@@ -852,19 +865,6 @@ input {
     color: #999999;
     font-size: 11px;
     position: relative;
-}
-
-.articles .img-description-box span:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 11px;
-    height: 10px;
-    background-image: url("../img/sprite.png");
-    top: 50%;
-    left: 50%;
-    margin-left: -5px;
-    margin-top: -5px;
 }
 
 .articles .img-description-box .download span:before {
