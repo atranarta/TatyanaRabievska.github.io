@@ -1,5 +1,4 @@
-var name = 'admin', text;
-
-name == 'admin' ? text = 'Hi' :
-name == 'manager' ? text = 'Hello' :
-name == ''? text = 'No login' : text = '';
+var text = (name == 'admin') ? 'Hi' :
+    (name == 'manager') ? 'Hello' :
+        (name == '') ? 'No login' :
+            '';
