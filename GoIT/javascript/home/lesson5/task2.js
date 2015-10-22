@@ -5,16 +5,18 @@ var image = {
 };
 
 function multiplyNumeric(obj) {
-    var  multiplication = {};
 
     for (var key in obj) {
-        if (!(NaN(obj[key]))) {
-            multiplication[key] = (obj[key])*2;
+        if (!(isNaN(obj[key]))) {
+            image[key] = obj[key]*2;
         } else {
-            multiplication[key] = obj[key];
+            image[key] = obj[key];
         }
     }
-    return multiplication;
+    return image;
 }
 
 console.log(multiplyNumeric(image));
+
+
+

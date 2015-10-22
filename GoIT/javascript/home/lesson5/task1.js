@@ -7,13 +7,16 @@ var tasksCompleted = {
 
 function taskMaster(obj) {
     var result = 0;
+    var name = 0;
     for (var key in obj) {
         if (obj[key] > result) {
             result = obj[key];
-            var name = key;
+            name = key;
         }
     }
     return name + ': ' + result;
 }
 
 console.log(taskMaster(tasksCompleted));
+
+
