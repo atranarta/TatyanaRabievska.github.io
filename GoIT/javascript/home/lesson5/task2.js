@@ -12,8 +12,8 @@ function multiplyNumeric(obj) {
         } else {
             obj[key];
         }
-        return (obj);
     }
+    return (obj);
 }
 
 console.log(multiplyNumeric(image));
