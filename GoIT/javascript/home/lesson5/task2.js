@@ -7,13 +7,9 @@ var image = {
 function multiplyNumeric(obj) {
 
     for (var key in obj) {
-        if (!(isNaN(obj[key]))) {
-            obj[key] = obj[key]*2;
-        } else {
-            obj[key] = obj[key];
-        }
+        (!(isNaN(obj[key]))) ? obj[key] = obj[key]*2 : obj[key] = obj[key];
     }
-    return image;
+    return obj;
 }
 
 console.log(multiplyNumeric(image));
