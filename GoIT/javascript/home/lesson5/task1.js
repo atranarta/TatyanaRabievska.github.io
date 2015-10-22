@@ -10,9 +10,10 @@ function taskMaster(obj) {
     for (var key in obj) {
         if (obj[key] > result) {
             result = obj[key];
+            var name = key;
         }
     }
-    return key + ': ' + result;
+    return name + ': ' + result;
 }
 
-document.write(taskMaster(tasksCompleted));
+console.log(taskMaster(tasksCompleted));

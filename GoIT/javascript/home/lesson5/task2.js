@@ -17,4 +17,4 @@ function multiplyNumeric(obj) {
     return multiplication;
 }
 
-document.write(multiplyNumeric(image));
+console.log(multiplyNumeric(image));
