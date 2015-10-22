@@ -8,7 +8,7 @@ function multiplyNumeric(obj) {
 
     for (var key in obj) {
         if (!(isNaN(obj[key]))) {
-            obj[key] = obj[key]*2;
+            obj[key] *= 2;
         }
     }
     return (obj);
