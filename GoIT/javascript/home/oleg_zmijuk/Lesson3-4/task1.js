@@ -5,6 +5,10 @@ var app = {
         if (params.inputType) {
             element.setAttribute('type', params.inputType)
         } 
+        
+        if (params.value) {
+            element.setAttribute('value', params.value)
+        } 
     
         if (params.className) {
             element.className = params.className;
@@ -32,7 +36,8 @@ var app = {
             for (var j = 1; j <= answerAmount; j++) {
                 var label = this.createElement({
                     tagName: 'label',
-                    content: '<input type="checkbox" /> Вариант ответа №' + j,
+                    className: 'checkbox block',
+                    content: '<input type="checkbox" class="checkbox" /> Вариант ответа №' + j,
                     parentElement: li
                 })
             }
@@ -64,10 +69,7 @@ app.generateQuestions(3, 3);
 app.createElement({
     tagName: 'input',
     inputType: 'submit',
-    className: 'check-results',
-    content: 'Проверить мои результаты',
+    className: 'check-results btn btn-default',
+    value: 'Проверить мои результаты',
     parentElement: form
 });
-
-
-
