@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <link href="../bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="timer" id="timer">
+            <span id="hou">00</span>
+            :
+            <span id="min">00</span>
+            :
+            <span id="sec">00</span>
+            <span class="ms" id="ms">0</span>
+        </div>
+        <button class="btn1" id="btn1">
+            <span class="startTimer" id="start">Start</span>
+            <span class="pauseTimer" id="pause" onclick="clearInterval(timer)">Pause</span>           
+        </button>
+        <button class="btn2" id="reset" onclick="clearTimeout(timer)"><span>Clear</span></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
