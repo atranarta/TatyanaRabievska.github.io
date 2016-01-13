@@ -1,90 +1,79 @@
 var timer;
-var hou = 0;
+var hours = 0;
 var min = 0;
 var sec = 0;
 var ms = 0;
-var right = true;
 
 document.getElementById('btn1').onclick = function() {
-      
+
     document.getElementById('start').style.display = (document.getElementById('start').style.display == 'none') ? 'block' : 'none';
     document.getElementById('pause').style.display = (document.getElementById('pause').style.display == 'block') ? 'none' : 'block';
-    
-}
+
+};
 
 var run = function() {
-    if(right) {
-       timer = setInterval (function() {
-            ms++;
+    timer = setInterval (
+        function() {
+            ms += 10;
 
-            if(ms % 1000 === 0) {
+            if (ms === 1000) {
                 sec++;
                 ms = 0;
-            };
+            }
 
-            if(sec % 60 === 0) {
+            if (sec === 60) {
                 min++;
                 sec = 0;
-            };
+            }
 
-            if(min % 60 === 0) {
-                hou++;
+            if (min === 60) {
+                hours++;
                 min = 0;
-            };
-           
-           if(hou % 24 === 0) {
-               hou = 0;
-           };
-
-            document.getElementById('ms').innerHTML = ms;
-            document.getElementById('sec').innerHTML = sec;
-            document.getElementById('min').innerHTML = min;
-            document.getElementById('hou').innerHTML = hou;
-           
-           
-            if (document.getElementById('hou').innerHTML == 0) document.getElementById('hou').innerHTML = "0" +         document.getElementById('hou').innerHTML;
-            if (document.getElementById('hou').innerHTML < 10 && document.getElementById('hou').innerHTML.charAt(0) != 0) {
-                document.getElementById('hou').innerHTML = "0" + document.getElementById('hou').innerHTML;
             }
            
-            if (document.getElementById('min').innerHTML  == 0) document.getElementById('min').innerHTML = "0" + document.getElementById('min').innerHTML;
-            if (document.getElementById('min').innerHTML < 10 && document.getElementById('min').innerHTML.charAt(0) != 0) {
-                document.getElementById('min').innerHTML = "0" + document.getElementById('min').innerHTML;
+           if (hours === 24) {
+                hours = 0;
             }
-           
-           if (document.getElementById('sec').innerHTML  == 0) document.getElementById('sec').innerHTML = "0" + document.getElementById('sec').innerHTML; 
-           if (document.getElementById('sec').innerHTML < 10 && document.getElementById('sec').innerHTML.charAt(0) != 0) {
-                document.getElementById('sec').innerHTML = "0" + document.getElementById('sec').innerHTML;
-            }
-
+            updateHtml();
         },
-        1);
+        10
+    );
     }
-    right = false;
-}
 
-var rightToFalse = function() {
-    if (right == false) right = true;
+var doPause = function() {
+    clearInterval(timer);
 }
 
 var resetTimer = function() {
-    document.getElementById('ms').innerHTML = 0;
-    document.getElementById('sec').innerHTML = "0" + "0";
-    document.getElementById('min').innerHTML = "0" + "0";
-    document.getElementById('hou').innerHTML = "0" + "0";
+    clearInterval(timer);
+
+    document.getElementById('start').style.display = 'block';
+    document.getElementById('pause').style.display = 'none';
+
+    hours = min = sec = ms = 0;
+    
+    updateHtml();
+};
+
+function updateHtml() {
+
+    var msHtml = ms;
+
+    if  (ms < 10) {
+        msHtml = "0" + msHtml;
+    }
+
+    if  (ms < 100) {
+        msHtml = "0" + msHtml;
+    }
+
+    document.getElementById('ms').innerHTML = msHtml;
+    document.getElementById('sec').innerHTML = sec < 10 ? "0" + sec : sec;
+    document.getElementById('min').innerHTML = min < 10 ? "0" + min : min;
+    document.getElementById('hours').innerHTML = hours < 10 ? "0" + hours : hours;
 }
 
 
 document.getElementById('start').addEventListener("click", run);
-document.getElementById('pause').addEventListener("click", rightToFalse);
+document.getElementById('pause').addEventListener("click", doPause);
 document.getElementById('reset').addEventListener("click", resetTimer);
-
-
-
-
-
-
-
-
-
-
