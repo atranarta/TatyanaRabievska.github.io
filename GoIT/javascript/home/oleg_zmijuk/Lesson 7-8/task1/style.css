@@ -1,0 +1,48 @@
+.tabs {
+	display: inline-block;
+}
+
+.tabs > div {
+	padding: 10px;
+}
+
+.tabs ul {
+	margin: 0px;
+	padding: 3px;
+	padding-bottom: 0px;
+    background:#D6D6D7;
+}
+
+.tabs ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.tabs ul li {
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 10px 15px;
+	background: #fff;
+	color: #707070;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tabs ul li.active, 
+.tabs ul li.active:hover,
+.tabs ul li:hover {
+    background: #e9eaeb;
+	color: #636060;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content.active {
+  display: block; 
+}
