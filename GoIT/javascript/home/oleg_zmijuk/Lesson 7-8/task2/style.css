@@ -1,0 +1,57 @@
+form {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+    position: relative;
+}
+
+fieldset div {
+    margin-bottom: 2em;
+    position: relative;
+}
+
+fieldset .help {
+    display: inline-block;
+}
+
+button {
+    width: 150px;
+    background: #DAD4D4;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #555555;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+button:hover {
+    background: #B3B3B3;
+}
+
+.tooltip { 
+    position: absolute;
+    z-index: 999;
+    left: 230px;
+    top: -14px;
+    font-size: 12px;
+    background: #fff;
+    color: #565353;
+    padding: 4px 6px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px #5F5D5D;
+    display: none;
+}
+
+.active .tooltip {
+    display: block;
+}
