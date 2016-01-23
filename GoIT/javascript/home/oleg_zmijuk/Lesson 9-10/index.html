@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lesson 9-10</title>
+        <link rel="stylesheet" href="./style.css" >
+        <link rel="stylesheet" href="./zino-ui-custom-1.5/themes/silver/zino.selectbox.css">
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/g/jcarousel@0.3.4(jquery.jcarousel.min.js+jquery.jcarousel-control.js+jquery.jcarousel-pagination.min.js+jquery.jcarousel-core.min.js+jquery.jcarousel-core.js)"></script>
+        <script src="./zino-ui-custom-1.5/zino.selectbox.min.js"></script>
+        <script src="http://static.zinoui.com/js/front.min.js"></script>
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <h1>Carousel</h1>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                        <li><img src="http://lorempixel.com/600/400/" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+        
+            <select name="selectbox" id="selectbox" tabindex="1">
+                <option value="">-- Language --</option>
+                <optgroup label="oop">
+                    <option value="javascript">Javascript</option>
+                    <option value="ruby">Ruby</option>
+                </optgroup>
+                <option value="objective_c">Objective C</option>
+                <option value="visual_basic" disabled="disabled">Visual Basic</option>
+                <option value="python">Python</option>
+                <option value="lua">Lua</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+    </body>
+</html>
+
