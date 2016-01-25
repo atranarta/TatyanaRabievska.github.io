@@ -1,5 +1,4 @@
 @import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
-
 body {
     background: #F0EFE7;
     margin: 0;
@@ -9,11 +8,16 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-  font-weight: normal;
-  text-rendering: optimizelegibility;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    text-rendering: optimizelegibility;
 }
 
 h1 {
@@ -22,24 +26,26 @@ h1 {
     font-weight: bold;
 }
 
-h2, h2 a {
+h2,
+h2 a {
     color: #F14E32;
 }
 
-h3, h3 a {
-  color: #0388A6;
+h3,
+h3 a {
+    color: #0388A6;
 }
 
 a {
-  color: #0388A6;
+    color: #0388A6;
 }
 
 pre {
-  border:1px solid #000;
-  overflow-x:auto;
-  background: #222;
-  color: #fff;
-  text-shadow: none;
+    border: 1px solid #000;
+    overflow-x: auto;
+    background: #222;
+    color: #fff;
+    text-shadow: none;
 }
 
 .wrapper {
@@ -55,12 +61,13 @@ pre {
     width: 600px;
     height: 400px;
     -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
 }
+
 
 /** Carousel **/
 
@@ -81,6 +88,7 @@ pre {
     float: left;
 }
 
+
 /** Carousel Controls **/
 
 .jcarousel-control-prev,
@@ -96,11 +104,11 @@ pre {
     text-shadow: 0 0 1px #000;
     font: 24px/27px Arial, sans-serif;
     -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
     -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
 }
 
 .jcarousel-control-prev {
@@ -122,6 +130,7 @@ pre {
     cursor: default;
 }
 
+
 /** Carousel Pagination **/
 
 .jcarousel-pagination {
@@ -133,19 +142,15 @@ pre {
 .jcarousel-pagination a {
     text-decoration: none;
     display: inline-block;
-    
     font-size: 11px;
     line-height: 14px;
     min-width: 14px;
-    
     background: #fff;
     color: #4E443C;
     border-radius: 14px;
     padding: 3px;
     text-align: center;
-    
     margin-right: 2px;
-    
     opacity: .75;
 }
 
@@ -156,30 +161,69 @@ pre {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
 
-
-
-form {
-	margin: 50px;
-	background: #99CCFF;
-	padding: 10px;
+.checkbox {
+    margin: 40px 0 0 20px;
+    padding-bottom: 50px;
 }
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label {
+    font: 15px 'georgia-italic', sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    color: #787878;
+    cursor: pointer;
+}
+
+label:after {
+    content: ' ';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+label:hover:after {
+    background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+.checkboxJQuery {
+    margin: 0 0 0 20px;
+    padding-bottom: 50px;
+}
+
+.checkboxJQuery p {
+    font: 15px 'georgia-italic', sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    color: #787878;
+    margin: 0;
+}
+
 .niceCheck {
-	width: 17px;
-	height: 17px;
-	display: inline-block;
-	cursor: pointer;
-	background: url(img/checkbox.png);
-	overflow: hidden;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: -17px;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
 }
-.niceChecked {
-	background-position: 0 -17px;
-}
+
 .niceCheck input {
-	margin-left: -100px;
-}
-div {
-	margin-bottom: 10px;
-}
-.niceCheckDisabled {
-	background-image: url(img/checkbox-disabled.png);
+    display: none;
 }

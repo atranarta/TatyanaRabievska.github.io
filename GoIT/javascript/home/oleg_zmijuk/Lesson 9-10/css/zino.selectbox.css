@@ -56,7 +56,7 @@
 	text-decoration: none;
 }
 .zui-selectbox-toggle{
-	background: url(img/zui-selectbox.png) 0 -24px no-repeat;
+	background: url(../img/zui-selectbox.png) 0 -24px no-repeat;
 	display: block;
 	height: 8px;
 	outline: none;
@@ -66,13 +66,13 @@
 	width: 13px;
 }
 .zui-selectbox-toggle:hover{
-	background: url(img/zui-selectbox.png) 0 -16px no-repeat;
+	background: url(../img/zui-selectbox.png) 0 -16px no-repeat;
 }
 .zui-selectbox-toggle-open{
-	background: url(img/zui-selectbox.png) 0 0 no-repeat;
+	background: url(../img/zui-selectbox.png) 0 0 no-repeat;
 }
 .zui-selectbox-toggle-open:hover{
-	background: url(img/zui-selectbox.png) 0 -8px no-repeat;
+	background: url(../img/zui-selectbox.png) 0 -8px no-repeat;
 }
 .zui-selectbox-holder-disabled{
 	background-color: #3C3C3C;
