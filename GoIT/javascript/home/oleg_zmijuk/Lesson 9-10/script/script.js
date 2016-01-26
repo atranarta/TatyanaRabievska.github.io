@@ -85,7 +85,7 @@
 
     // menu
 
-    $(document).ready(function () {
+    $(function () {
         $('nav ul li').hover(
             function () {
                 $(this).addClass("active");
