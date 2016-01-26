@@ -50,17 +50,13 @@
 
         $(".niceCheck").mousedown(
             function () {
-
                 changeCheck($(this));
-
             });
 
 
         $(".niceCheck").each(
             function () {
-
-                changeCheckStart($(this));
-
+                changeCheckStart($(this)); 
             });
 
     });
@@ -86,5 +82,20 @@
         }
         return true;
     }
+
+    // menu
+
+    $(document).ready(function () {
+        $('nav ul li').hover(
+            function () {
+                $(this).addClass("active");
+                $(this).find('ul:first').slideDown();
+            },
+            function () {
+                $(this).removeClass("active");
+                $(this).find('ul').slideUp('slow');
+            }
+        );
+    }); 
 
 })(jQuery);
