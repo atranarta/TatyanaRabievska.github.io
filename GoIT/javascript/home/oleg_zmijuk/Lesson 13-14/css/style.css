@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #F2F2F2;
+    background: url(../img/background.jpg) repeat;
+}
+
+.wrap {
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 750px;
+    padding: 70px 0;
+    padding-top: 0;
+    background: #ffffff;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.wrap>img {
+    margin-bottom: 40px;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    text-align: center;
+    margin-left: -223px;
+}
+
+form {
+    padding: 0 30px;
+}
+
+div {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+    float: left;
+    margin-right: 10px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.button {
+    width: 300px;
+    font-size: 18px;
+    padding: 5px 15px;
+    background: #dbdbdb;
+    border: 2px solid #bcbaba;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    box-shadow: 0 3px 5px rgba( 53, 53, 43, .2);
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #bcbaba;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 8%;
+    width: 80%;
+    height: 60%;
+    margin: auto auto;
+    padding: 20px 50px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+    border-radius: 5px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.modal h1 {
+    position: static;
+}
+
+.modal span {
+    font-size: 20px;
+}
+
+.paranja {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+.questions-box {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.answers-box {
+    margin: 0 0 40px 20px;
+    font-weight: normal;
+}

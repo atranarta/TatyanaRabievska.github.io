@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="script/tmpl.js"></script>
+    <script src="script/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Тест по программированию</h1>
+        <img src="img/Lets-Increase-Typing-Speed.@750.jpg">
+        <form method="post" action="">
+            <script type="text/template" id="test">
+                <ol>
+                    <% for (var i=0; i < local.length; i++) { %>
+                        <li>
+                            <div>
+                                <%=local[i].id%>.
+                                    <%=local[i].text%>
+                            </div>
+                            <label for="<%=i%>.0" class="answer">
+                                <%=local[i].answers[0]%>
+                                    <input type="checkbox" name="choices" id="<%=i%>.0" value="3">
+                            </label>
+                            <label for="<%=i%>.1" class="answer">
+                                <%=local[i].answers[1]%>
+                                    <input type="checkbox" name="choices" id="<%=i%>.1" value="2">
+                            </label>
+                            <label for="<%=i%>.2" class="answer">
+                                <%=local[i].answers[2]%>
+                                    <input type="checkbox" name="choices" id="<%=i%>.2" value="3">
+                            </label>
+                        </li>
+                        <% };%>
+                </ol>
+
+            </script>
+            <input type="submit" class="button" value="Проверить мои результаты">
+        </form>
+    </div>
+
+</body>
+
+</html>
