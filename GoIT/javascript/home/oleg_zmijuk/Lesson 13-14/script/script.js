@@ -106,7 +106,7 @@ $(function () {
 
         function resetTest() {
 
-            $('input:checkbox').prop('checked', false); //очищаем форму
+            $('input:checkbox').prop('checked', false); 
             modal.remove();
             paranja.remove();
             return false;
