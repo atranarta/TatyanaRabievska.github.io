@@ -25,11 +25,11 @@ form {
 }
 
 .search input[type='text'] {
-    display: inline-block; 
+    display: inline-block;
     width: 545px;
     height: 42px;
     color: #222;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     box-sizing: border-box;
     font-size: 13px;
     border: 1px solid #D9D9D9;
