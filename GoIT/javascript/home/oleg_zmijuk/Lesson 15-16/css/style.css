@@ -11,7 +11,7 @@ body {
     max-width: 584px;
     height: 700px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 .wrap .logo {
@@ -61,4 +61,21 @@ form {
 
 .search input[type='submit']:hover {
     background-color: #3670d0;
+}
+
+.results {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.results ul {
+    padding-left: 20px;
+}
+
+.results li {
+    margin: 10px 0;
+}
+
+.results li a {
+    font-weight: bold;
 }
