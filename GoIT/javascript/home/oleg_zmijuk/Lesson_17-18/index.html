@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="script/build/production.min.js"></script>
+</head>
+
+<body>
+    <script type="text/template" id="templateHtml">
+        <div class="slider">
+            <div class="slide-list">
+                <div class="slide-wrap">
+                    <% for (var i=0; i < data.length; i++) { %>
+                        <div class="slide-item">
+                            <img width="100" height="100" src=<%= data[i].url %> alt=""/>
+                            <span class="slide-title"><%= data[i].content %></span>
+                        </div>
+                        <% }; %>
+                </div>
+            </div>
+            <div class="navy prev-slide"><span>Назад</span></div>
+		  <div class="navy next-slide"><span>Вперед</span></div>
+        </div>
+    </script>
+
+</body>
+
+</html>
