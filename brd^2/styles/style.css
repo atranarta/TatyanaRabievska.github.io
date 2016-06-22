@@ -1,0 +1,560 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.clr:after {
+    content: '';
+    display: table;
+    clear: both;
+    overflow: hidden;
+}
+
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-day {
+    background: url(../image/bg-day.jpg);
+}
+
+.bg-night {
+    background: url(../image/bg-night.jpg);
+}
+
+.bg-day,
+.bg-night {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.clock-wrap {
+    text-align: center;
+}
+
+.clock {
+    padding-top: 36.2%;
+    padding-left: 36.2%;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 9%;
+}
+
+.grad {
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    left: 7px;
+    top: -77px;
+    background: -moz-linear-gradient(right center, #F00 0%, #FF0 50%, #0F0 100%) repeat scroll 0% 0% transparent;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%, rgba(255, 0, 0, 1)), color-stop(50%, rgba(255, 255, 0, 1)), color-stop(100%, rgba(0, 255, 0, 1)));
+}
+
+.grad:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0 0 50%;
+    background: #01FF00;
+    top: 0;
+    left: -50px;
+}
+
+.grad:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 50% 50% 0;
+    background: #FF0100;
+    top: 0;
+    right: -50px;
+}
+
+.dial-number {
+    position: absolute;
+    font-size: 2vw;
+    font-family: "Comfortaa";
+    color: rgb(142, 142, 142);
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+    width: 9%;
+    height: 9%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 160%;
+    /*
+    causeRepaintsOn = $("h1, h2, h3, p");
+
+    $(window).resize(function() {
+      causeRepaintsOn.css("z-index", 1);
+    });
+*/
+    /*    https://css-tricks.com/viewport-sized-typography/*/
+}
+
+.dial-number.one {
+    top: 14.5%;
+    right: 27%;
+}
+
+.dial-number.two {
+    top: 27.5%;
+    right: 14%;
+}
+
+.dial-number.three {
+    top: 46%;
+    right: 9%;
+}
+
+.dial-number.four {
+    top: 64.5%;
+    right: 14%;
+}
+
+.dial-number.five {
+    top: 77%;
+    right: 27%;
+}
+
+.dial-number.six {
+    bottom: 9%;
+    left: 45.5%;
+}
+
+.dial-number.seven {
+    top: 77.5%;
+    left: 28%;
+}
+
+.dial-number.eight {
+    top: 64.5%;
+    left: 14.5%;
+}
+
+.dial-number.nine {
+    top: 46%;
+    left: 9.5%;
+}
+
+.dial-number.ten {
+    top: 27.5%;
+    left: 14.5%;
+}
+
+.dial-number.eleven {
+    top: 14.5%;
+    left: 27.5%;
+}
+
+.dial-number.twelve {
+    top: 10%;
+    left: 46%;
+}
+
+.dial-number.good,
+.dial-number.bad {
+    color: #ffffff;
+}
+
+.dial-number.good {
+    background: #01ae83;
+}
+
+.dial-number.bad {
+    background: #ea4b36;
+}
+
+.dial-dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.dial-dot.main {
+    width: 19%;
+    height: 19%;
+    background: #8e8e8e;
+}
+
+.one .dial-dot.main {
+    top: -36%;
+    right: 11%;
+}
+
+.two .dial-dot.main {
+    top: -6%;
+    right: -21%;
+}
+
+.three .dial-dot.main {
+    top: 34%;
+    right: -36%;
+}
+
+.four .dial-dot.main {
+    bottom: 5%;
+    right: -21%;
+}
+
+.five .dial-dot.main {
+    bottom: -28%;
+    right: 11%;
+}
+
+.six .dial-dot.main {
+    bottom: -33%;
+    right: 38%;
+}
+
+.seven .dial-dot.main {
+    bottom: -24%;
+    left: 7%;
+}
+
+.eight .dial-dot.main {
+    bottom: 6%;
+    left: -20%;
+}
+
+.nine .dial-dot.main {
+    bottom: 46%;
+    left: -36%;
+}
+
+.ten .dial-dot.main {
+    top: -4%;
+    left: -22%;
+}
+
+.eleven .dial-dot.main {
+    top: -32%;
+    left: 11%;
+}
+
+.twelve .dial-dot.main {
+    top: -44%;
+    left: 38%;
+}
+
+.dial-dot.minute {
+    background: #dddddd;
+    width: 9%;
+    height: 9%;
+}
+
+.one .dial-dot.minute.one {
+    top: 0%;
+    right: -25%;
+}
+
+.one .dial-dot.minute.two {
+    top: 28%;
+    right: -63%;
+}
+
+.one .dial-dot.minute.three {
+    bottom: 27%;
+    right: -98%;
+}
+
+.one .dial-dot.minute.four {
+    top: 98%;
+    right: -132%;
+}
+
+.two .dial-dot.minute.one {
+    top: 50%;
+    right: -41%;
+}
+
+.two .dial-dot.minute.two {
+    bottom: -1%;
+    right: -61%;
+}
+
+.two .dial-dot.minute.three {
+    top: 142%;
+    right: -74%;
+}
+
+.two .dial-dot.minute.four {
+    bottom: -98%;
+    right: -84%;
+}
+
+.three .dial-dot.minute.one {
+    top: 97%;
+    right: -28%;
+}
+
+.three .dial-dot.minute.two {
+    bottom: -54%;
+    right: -19%;
+}
+
+.three .dial-dot.minute.three {
+    top: 191%;
+    right: -5%;
+}
+
+.three .dial-dot.minute.four {
+    bottom: -145%;
+    right: 14%;
+}
+
+.four .dial-dot.minute.one {
+    bottom: -33%;
+    right: 14%;
+}
+
+.four .dial-dot.minute.two {
+    bottom: -70%;
+    right: 46%;
+}
+
+.four .dial-dot.minute.three {
+    bottom: -104%;
+    right: 81%;
+}
+
+.four .dial-dot.minute.four {
+    bottom: -134%;
+    right: 120%;
+}
+
+.five .dial-dot.minute.one {
+    bottom: -42%;
+    right: 61%;
+}
+
+.five .dial-dot.minute.two {
+    bottom: -60%;
+    right: 106%;
+}
+
+.five .dial-dot.minute.three {
+    bottom: -73%;
+    left: -62%;
+}
+
+.five .dial-dot.minute.four {
+    bottom: -81%;
+    left: -110%;
+}
+
+.six .dial-dot.minute.one {
+    bottom: -27%;
+    left: 0%;
+}
+
+.six .dial-dot.minute.two {
+    bottom: -17%;
+    right: 139%;
+}
+
+.six .dial-dot.minute.three {
+    bottom: -4%;
+    left: -93%;
+}
+
+.six .dial-dot.minute.four {
+    bottom: 13%;
+    left: -141%;
+}
+
+.seven .dial-dot.minute.one {
+    bottom: 10%;
+    left: -31%;
+}
+
+.seven .dial-dot.minute.two {
+    bottom: 40%;
+    left: -70%;
+}
+
+.seven .dial-dot.minute.three {
+    bottom: 74%;
+    left: -105%;
+}
+
+.seven .dial-dot.minute.four {
+    bottom: 112%;
+    left: -137%;
+}
+
+.eight .dial-dot.minute.one {
+    top: 30%;
+    left: -42%;
+}
+
+.eight .dial-dot.minute.two {
+    top: -15%;
+    left: -61%;
+}
+
+.eight .dial-dot.minute.three {
+    top: -62%;
+    left: -75%;
+}
+
+.eight .dial-dot.minute.four {
+    top: -110%;
+    left: -84%;
+}
+
+.nine .dial-dot.minute.one {
+    top: -17%;
+    left: -29%;
+}
+
+.nine .dial-dot.minute.two {
+    top: -65%;
+    left: -20%;
+}
+
+.nine .dial-dot.minute.three {
+    top: -112%;
+    left: -6%;
+}
+
+.nine .dial-dot.minute.four {
+    top: -156%;
+    left: 13%;
+}
+
+.ten .dial-dot.minute.one {
+    top: -45%;
+    left: 14%;
+}
+
+.ten .dial-dot.minute.two {
+    top: -82%;
+    left: 45%;
+}
+
+.ten .dial-dot.minute.three {
+    top: -115%;
+    left: 82%;
+}
+
+.ten .dial-dot.minute.four {
+    top: -145%;
+    left: 119%;
+}
+
+.eleven .dial-dot.minute.one {
+    top: -49%;
+    left: 59%;
+}
+
+.eleven .dial-dot.minute.two {
+    top: -68%;
+    left: 105%;
+}
+
+.eleven .dial-dot.minute.three {
+    top: -80%;
+    left: 152%;
+}
+
+.eleven .dial-dot.minute.four {
+    top: -88%;
+    left: 200%;
+}
+
+.twelve .dial-dot.minute.one {
+    top: -36%;
+    left: 91%;
+}
+
+.twelve .dial-dot.minute.two {
+    top: -30%;
+    left: 139%;
+}
+
+.twelve .dial-dot.minute.three {
+    top: -16%;
+    left: 185%;
+}
+
+.twelve .dial-dot.minute.four {
+    top: 2%;
+    right: -140%;
+}
+
+.current_time-wrap {
+    position: absolute;
+    top: 35.5%;
+    left: 20.5%;
+    font-family: 'Comfortaa', sans-serif, cursive;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.7;
+    text-align: center;
+    text-shadow: 0px 2px 0px rgba(0, 3, 1, 0.06);
+}
+
+.current_time-wrap h1 {
+    font-size: 1vw;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.current_time-arrow {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 118%;
+}
+
+.current_time-box {
+    font-size: 1.2vw;
+}
+
+.current_time-box span {
+    display: inline-block;
+    font-size: 1.4vw;
+    line-height: 2;
+    color: rgb(142, 142, 142);
+    /* IE10+ */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F5F6F6 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F5F6F6 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #F5F6F6 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(100, #F5F6F6));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F5F6F6 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #F5F6F6 100%);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    width: 37px;
+    height: 40px;
+}
